@@ -77,15 +77,15 @@
 
                             </HorizontalStackLayout>
 
-                            <Label
-                                Text="Need an acount?"
-                                FontSize="15"
-                                FontAttributes="Bold"
-                                TextDecorations="Underline"
+                            <Button
+                                
+                                Text="Need an account?"
+                                FontSize="17"
                                 Background="Transparent"
                                 TextColor="DarkGreen"
                                 VerticalOptions="End"
-                                HorizontalOptions="Center"/>
+                                HorizontalOptions="Center"
+                                Clicked="SignUpTapped"/>
                         </StackLayout>
                     </Frame>
 

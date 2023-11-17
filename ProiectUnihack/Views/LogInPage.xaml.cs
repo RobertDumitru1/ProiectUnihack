@@ -26,4 +26,8 @@ public partial class LogInPage : ContentPage
         else DisplayAlert("Not Logging In", "Wrong credentials introducedced", "ok");
     }
 
+    private void SignUpTapped(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(SignUpPage));
+    }
 }
