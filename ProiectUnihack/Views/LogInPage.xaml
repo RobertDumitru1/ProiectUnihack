@@ -106,7 +106,10 @@
                         BorderWidth="1"
                         FontAttributes="Bold"
                         Background="White"
-                        WidthRequest="100"/>
+                        WidthRequest="100"
+                    Clicked="LogIn"
+                    />
+                
             </VerticalStackLayout>
            
         </Grid>
