@@ -36,7 +36,7 @@
                             HorizontalOptions="Center"
                             VerticalOptions="Center"/>
 
-                        <Label HeightRequest="10"/>
+                        <Label HeightRequest="20"/>
 
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
 
@@ -69,9 +69,23 @@
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"/>
                         </HorizontalStackLayout>
-                        
-                        <Label HeightRequest="10"/>
+                       
 
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Label
+                                Text="Centru"
+                                TextColor="DarkGreen"
+                                FontSize="17"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                />
+                            <CheckBox Color="DarkGreen"
+                                      Scale="0.8"
+                                      HorizontalOptions="Center"
+                                      VerticalOptions="Center"/>
+                            
+                        </HorizontalStackLayout>
 
                         <Label
                             Text="Need an acount?"
@@ -81,8 +95,7 @@
                             Background="Transparent"
                             TextColor="DarkGreen"
                             VerticalOptions="End"
-                            HorizontalOptions="Center"
-                            />
+                            HorizontalOptions="Center"/>
                     </StackLayout>
                 </Frame>
 
@@ -93,8 +106,7 @@
                         BorderWidth="1"
                         FontAttributes="Bold"
                         Background="White"
-                        WidthRequest="100"
-                    Clicked="Button_Clicked"/>
+                        WidthRequest="100"/>
             </VerticalStackLayout>
            
         </Grid>
