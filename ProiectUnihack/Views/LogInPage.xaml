@@ -5,12 +5,14 @@
              Title="LogInPage">
     <VerticalStackLayout VerticalOptions="Center">
 
-        <StackLayout HorizontalOptions="Center" >
-
+        <Grid RowDefinitions="800" ColumnDefinitions="400">
+            <Image 
+                Aspect="AspectFill"
+                Source="wallpaper.png"/>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
                 <VerticalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
-                    <Frame BorderColor='Green' HeightRequest="330" CornerRadius="75"> 
+                    <Frame BorderColor='Green' HeightRequest="330" CornerRadius="75">
 
                         <StackLayout Orientation="Vertical" Spacing="4">
 
@@ -101,7 +103,7 @@
                 </VerticalStackLayout>
 
             </StackLayout>
-        </StackLayout>
+        </Grid>
     </VerticalStackLayout>
 
 </ContentPage>
