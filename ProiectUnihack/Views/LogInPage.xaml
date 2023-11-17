@@ -3,116 +3,105 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProiectUnihack.Views.LogInPage"
              Title="LogInPage">
-    <Grid>
+    <VerticalStackLayout VerticalOptions="Center">
 
-        <Image 
-            Aspect="AspectFill"
-            Source="wallpaper.png"/>
-        
-        <Grid>
+        <StackLayout HorizontalOptions="Center" >
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <VerticalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Frame BorderColor='Green' HeightRequest="330" CornerRadius="75"> 
+
+                        <StackLayout Orientation="Vertical" Spacing="4">
 
 
-            <VerticalStackLayout Grid.Row="1" Grid.Column="1" Spacing="10">
-                <Frame BorderColor='Green' Grid.Row="1" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="330" CornerRadius="75">
-
-                    <StackLayout Orientation="Vertical" Spacing="4">
-
-
-                        <Image
-                            Source="user.png"
-                            HeightRequest="50"
-                            WidthRequest="50"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"/>
-
-                        <Label HeightRequest="20"/>
-
-                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-
-                            <Label 
-                                Text="Username:"
-                                FontAttributes="Bold"
-                                FontSize="20"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                />
-
-                            <Entry 
-                                Placeholder="Enter your username" 
+                            <Image
+                                Source="user.png"
+                                HeightRequest="50"
+                                WidthRequest="50"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"/>
 
-                        </HorizontalStackLayout>
+                            <Label HeightRequest="20"/>
 
-                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
 
-                            <Label 
-                                Text="Password:"
-                                FontAttributes="Bold"
-                                FontSize="20"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"/>
+                                <Label 
+                                    Text="Username:"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    />
 
-                            <Entry 
-                                Placeholder="Enter your password" 
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"/>
-                        </HorizontalStackLayout>
-                       
+                                <Entry 
+                                    x:Name="entryUser"
+                                    Placeholder="Enter your username" 
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"/>
 
-                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+
+                                <Label 
+                                    Text="Password:"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"/>
+
+                                <Entry 
+                                    x:Name="entryPassword"
+                                    Placeholder="Enter your password" 
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"/>
+                            </HorizontalStackLayout>
+
+
+                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label
+                                    Text="Centru"
+                                    TextColor="DarkGreen"
+                                    FontSize="17"
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    />
+                                <CheckBox Color="DarkGreen"
+                                          Scale="0.8"
+                                          HorizontalOptions="Center"
+                                          VerticalOptions="Center"/>
+
+                            </HorizontalStackLayout>
+
                             <Label
-                                Text="Centru"
-                                TextColor="DarkGreen"
-                                FontSize="17"
+                                Text="Need an acount?"
+                                FontSize="15"
                                 FontAttributes="Bold"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                />
-                            <CheckBox Color="DarkGreen"
-                                      Scale="0.8"
-                                      HorizontalOptions="Center"
-                                      VerticalOptions="Center"/>
-                            
-                        </HorizontalStackLayout>
+                                TextDecorations="Underline"
+                                Background="Transparent"
+                                TextColor="DarkGreen"
+                                VerticalOptions="End"
+                                HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Frame>
 
-                        <Label
-                            Text="Need an acount?"
-                            FontSize="15"
-                            FontAttributes="Bold"
-                            TextDecorations="Underline"
-                            Background="Transparent"
+                    <Button 
+                            Text="Log In"
                             TextColor="DarkGreen"
-                            VerticalOptions="End"
-                            HorizontalOptions="Center"/>
-                    </StackLayout>
-                </Frame>
+                            BorderColor="DarkGreen"
+                            BorderWidth="1"
+                            FontAttributes="Bold"
+                            Background="White"
+                            WidthRequest="100"
+                            Clicked="LogIn"
+                        />
 
-                <Button 
-                        Text="Log In"
-                        TextColor="DarkGreen"
-                        BorderColor="DarkGreen"
-                        BorderWidth="1"
-                        FontAttributes="Bold"
-                        Background="White"
-                        WidthRequest="100"
-                    Clicked="LogIn"
-                    />
-                
-            </VerticalStackLayout>
-           
-        </Grid>
-    </Grid>
+                </VerticalStackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
 
 </ContentPage>
