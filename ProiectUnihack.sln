@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProiectUnihack", "ProiectUnihack\ProiectUnihack.csproj", "{60E0A271-61A8-42CA-B052-E1DD6ED50A23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E0A271-61A8-42CA-B052-E1DD6ED50A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E0A271-61A8-42CA-B052-E1DD6ED50A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E0A271-61A8-42CA-B052-E1DD6ED50A23}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{60E0A271-61A8-42CA-B052-E1DD6ED50A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E0A271-61A8-42CA-B052-E1DD6ED50A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E0A271-61A8-42CA-B052-E1DD6ED50A23}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {041EE960-4EFB-4AEE-9DCA-164A6C42770E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectUnihack.Views.LogInPage"
+             Title="LogInPage">
+    <Grid>
+
+        <Image 
+            Aspect="AspectFill"
+            Source="wallpaper.png"/>
+        
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <VerticalStackLayout Grid.Row="1" Grid.Column="1" Spacing="10">
+                <Frame BorderColor='Green' Grid.Row="1" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="330" CornerRadius="75">
+
+                    <StackLayout Orientation="Vertical" Spacing="4">
+
+
+                        <Image
+                            Source="user.png"
+                            HeightRequest="50"
+                            WidthRequest="50"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+
+                        <Label HeightRequest="10"/>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                            <Label 
+                                Text="Username:"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                />
+
+                            <Entry 
+                                Placeholder="Enter your username" 
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"/>
+
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+
+                            <Label 
+                                Text="Password:"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"/>
+
+                            <Entry 
+                                Placeholder="Enter your password" 
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+                        
+                        <Label HeightRequest="10"/>
+
+
+                        <Label
+                            Text="Need an acount?"
+                            FontSize="15"
+                            FontAttributes="Bold"
+                            TextDecorations="Underline"
+                            Background="Transparent"
+                            TextColor="DarkGreen"
+                            VerticalOptions="End"
+                            HorizontalOptions="Center"
+                            />
+                    </StackLayout>
+                </Frame>
+
+                <Button 
+                        Text="Log In"
+                        TextColor="DarkGreen"
+                        BorderColor="DarkGreen"
+                        BorderWidth="1"
+                        FontAttributes="Bold"
+                        Background="White"
+                        WidthRequest="100"
+                    Clicked="Button_Clicked"/>
+            </VerticalStackLayout>
+           
+        </Grid>
+    </Grid>
+
+</ContentPage>
