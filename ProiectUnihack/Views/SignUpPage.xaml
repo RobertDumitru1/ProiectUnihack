@@ -24,9 +24,8 @@
                             HorizontalOptions="Center"
                             VerticalOptions="Center"/>
 
-                            <Label HeightRequest="20"/>
 
-                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
 
                                 <Label 
                                 Text="Username:"
@@ -44,6 +43,8 @@
 
                             </HorizontalStackLayout>
 
+
+
                             <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
 
                                 <Label 
@@ -59,51 +60,32 @@
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"/>
 
+
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
+
                                 <Label 
-                                    Text="Password:"
+                                    Text="Rewrite:"
                                     FontAttributes="Bold"
                                     FontSize="20"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"/>
 
-                                 <Entry 
-                                    x:Name="entryPasswordConfirm"
-                                    Placeholder="Enter your password" 
+                                <Entry 
+                                    x:Name="entryConfirmPassword"
+                                    Placeholder="Confirm your password" 
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"/>
-                            </HorizontalStackLayout>
 
-
-                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                                <Label
-                                Text="Centru"
-                                TextColor="DarkGreen"
-                                FontSize="17"
-                                FontAttributes="Bold"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                />
-                                <CheckBox Color="DarkGreen"
-                                      Scale="0.8"
-                                      HorizontalOptions="Center"
-                                      VerticalOptions="Center"/>
 
                             </HorizontalStackLayout>
 
-                            <Label
-                            Text="Need an acount?"
-                            FontSize="15"
-                            FontAttributes="Bold"
-                            TextDecorations="Underline"
-                            Background="Transparent"
-                            TextColor="DarkGreen"
-                            VerticalOptions="End"
-                            HorizontalOptions="Center"/>
                         </StackLayout>
                     </Frame>
 
                     <Button 
-                        Text="Log In"
+                        Text="Sign Up"
                         TextColor="DarkGreen"
                         BorderColor="DarkGreen"
                         BorderWidth="1"
