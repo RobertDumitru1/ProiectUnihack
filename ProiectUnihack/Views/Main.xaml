@@ -84,7 +84,7 @@
                BorderColor="Red">
             <HorizontalStackLayout>
                 
-                <Image Source="glassbottle.png"
+                <Image Source="bottleglass.png"
                        HorizontalOptions="Start"
                        HeightRequest="190"
                        WidthRequest="100"
@@ -120,7 +120,7 @@
                WidthRequest="365">
 
             <HorizontalStackLayout>
-                    <Image Source="plasticbag.png"
+                    <Image Source="bagplastic.png"
                            HorizontalOptions="Start"
                            HeightRequest="190"
                            WidthRequest="100"
