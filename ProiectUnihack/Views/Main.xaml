@@ -50,7 +50,7 @@
                BackgroundColor="CornflowerBlue"
                BorderColor="CornflowerBlue"
                WidthRequest="365">
-            <HorizontalStackLayout>
+            <HorizontalStackLayout HeightRequest="200" WidthRequest="365">
                 
                 <Image Source="waterbottle.png"
                        HorizontalOptions="Start"
@@ -62,15 +62,53 @@
                     <Label Text="Sticle din Plastic"
                            FontSize="25"
                            FontAttributes="Bold"
-                           HorizontalOptions="Center"/>
-                    <Label Text="Orice recipient confectionat din plastic care se considera PET."
+                           HorizontalOptions="Start"/>
+                    <Label Text="Orice recipient confectionat "
                            FontSize="20"   
                            FontAttributes="Italic"
-                           VerticalOptions="Center"/>
-                    
-                    <Button/>
-                    <Button/>
-                    
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           LineHeight="10"
+                           LineBreakMode="TailTruncation"/>
+
+                    <Label Text="din plastic care se considera PET."
+                           FontSize="20"   
+                           FontAttributes="Italic"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           LineHeight="10"
+                           LineBreakMode="TailTruncation"/>
+                    <Label Text="PET."
+                           FontSize="20"   
+                           FontAttributes="Italic"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           LineHeight="10"
+                           LineBreakMode="TailTruncation"/>
+                    <Label Padding="10" Margin="0"/>
+                    <HorizontalStackLayout>
+                        <Label Text="Banuti:"
+                               FontSize="20"   
+                               FontAttributes="Italic"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               LineHeight="10"
+                               LineBreakMode="TailTruncation"/>
+
+                        <Label Padding="0, 0, 60, 0"/>
+                        <Label Text = "1000"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               FontSize="20"/>
+
+                        <Image
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            Source="coin.png"/>
+                    </HorizontalStackLayout>
+
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </Frame>
@@ -95,26 +133,60 @@
                            FontSize="25"
                            FontAttributes="Bold"
                            HorizontalOptions="Center"/>
-                    <Label>
+                    <Label Text="Orice recipient confec- "
+                           FontSize="20"   
+                           FontAttributes="Italic"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           LineHeight="10"
+                           LineBreakMode="TailTruncation"/>
+                   
+
+                    <Label FontSize="20">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="Orice recipient confectionat din "/>
-                                <Span Text="Sticla." TextDecorations="Underline"/>
+                                <Span Text="tionat din "
+                                      FontSize="20"/>
+                                <Span Text="Sticla." TextDecorations="Underline"
+                                      FontSize="20"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
-                    
-                    <Button/>
-                    <Button/>
-                        
+
+                    <Label Padding="10" Margin="0"/>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Banuti:"
+                               FontSize="20"   
+                               FontAttributes="Italic"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               LineHeight="10"
+                               LineBreakMode="TailTruncation"/>
+
+                        <Label Padding="0, 0, 60, 0"/>
+                        <Label Text = "1000"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               FontSize="20"/>
+
+                        <Image
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            Source="coin.png"/>
+                    </HorizontalStackLayout>
+
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </Frame>
         
         <Label Margin="0" Padding="0"></Label>
         
-        <Frame HeightRequest="200" 
+        <Frame HeightRequest="250" 
                CornerRadius="20"
+               Padding="0"
                BackgroundColor="DarkOrange"
                BorderColor="DarkOrange"
                WidthRequest="365">
@@ -130,12 +202,51 @@
                     <Label Text="Sacose din Plastic"
                            FontSize="25"
                            FontAttributes="Bold"
-                           HorizontalOptions="Center"/>
-                    <Label Text="Orice recipient flexibil și ușor, fabricat în general din polietilenă sau alte materiale plastice similare."
-                           />
-                    <Button>
+                           HorizontalOptions="Start"/>
+
+
+                    <Label Text="Orice recipient flexibil și"
+                           FontSize="20"
+                           FontAttributes="Italic"/>
+
+                    <Label Text="usor, fabricat în general"
+                           FontSize="20"   
+                           FontAttributes="Italic"/>
+                    <Label Text="din polietilenă sau alte"
+                           FontSize="20"   
+                           FontAttributes="Italic"/>
+                    
+                    <Label Text="materiale plastice"
+                           FontSize="20"   
+                           FontAttributes="Italic"/> 
+                    <Label Text="similare."
+                           FontSize="20"   
+                           FontAttributes="Italic"/>
+                    <Label Padding="1"></Label>
+
+                    <HorizontalStackLayout>
+                    <Label Text="Banuti:"
+                           FontSize="20"   
+                           FontAttributes="Italic"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           LineHeight="10"
+                           LineBreakMode="TailTruncation"/>
                         
-                    </Button>
+                        <Label Padding="0, 0, 60, 0"/>
+                        <Label Text = "1000"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               FontSize="20"/>
+                        
+                        <Image
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            Source="coin.png"/>
+                    </HorizontalStackLayout>
+
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </Frame>
