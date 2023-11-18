@@ -23,8 +23,7 @@
                     HeightRequest="40"
                     WidthRequest="101"
                     Padding="0">
-                    <Label 
-                        Text="{Binding }" 
+                    <Label  
                         TextColor="Black"
                         FontSize="30"
                         HorizontalOptions="CenterAndExpand"
@@ -37,6 +36,44 @@
                        WidthRequest="50"/>
 
             </StackLayout>
+            
         </Frame>
+        
+        <Label Margin="0" Padding="0"> </Label>
+        <Frame HeightRequest="200" 
+               CornerRadius="20"
+               BackgroundColor="CornflowerBlue"
+               BorderColor="CornflowerBlue"
+               WidthRequest="365">
+            <Image Source="waterbottle.png"
+                   HorizontalOptions="Start"
+                   HeightRequest="190"
+                   WidthRequest="100"/>
+
+        </Frame>
+        
+        <Label Margin="0" Padding="0"></Label>
+        
+        <Frame HeightRequest="200" 
+               CornerRadius="20"
+               BackgroundColor="Red"
+               WidthRequest="365"
+               BorderColor="Red">
+
+
+        </Frame>
+        
+        <Label Margin="0" Padding="0"></Label>
+        
+        <Frame HeightRequest="200" 
+               CornerRadius="20"
+               BackgroundColor="DarkOrange"
+               BorderColor="DarkOrange"
+               WidthRequest="365">
+
+
+        </Frame>
+        
     </VerticalStackLayout>
+    
 </ContentPage>

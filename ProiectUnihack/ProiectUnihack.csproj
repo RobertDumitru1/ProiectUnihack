@@ -69,6 +69,7 @@
 	  <None Remove="Resources\Images\shoppingcart.png" />
 	  <None Remove="Resources\Images\user.png" />
 	  <None Remove="Resources\Images\wallpaper.png" />
+	  <None Remove="Resources\Images\WaterBottle.png" />
 	</ItemGroup>
 
 	<ItemGroup>
