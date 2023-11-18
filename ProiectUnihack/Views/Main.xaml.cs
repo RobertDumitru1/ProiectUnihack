@@ -12,7 +12,7 @@ public partial class Main : ContentPage
         Banuti = "150";
 	}
 
-    private void ImageButton_Clicked(object sender, EventArgs e)
+    private void ShopButton_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync(nameof(Shop));
     }

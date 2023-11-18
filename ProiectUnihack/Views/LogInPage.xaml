@@ -38,7 +38,8 @@
 
                                 <Entry 
                                     x:Name="entryUser"
-                                    Placeholder="Enter your username" 
+                                    Placeholder="Enter your username"
+                                    MaxLength="12"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"/>
 
@@ -56,6 +57,8 @@
                                 <Entry 
                                     x:Name="entryPassword"
                                     Placeholder="Enter your password" 
+                                    IsPassword="True"
+                                    MaxLength="20"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"/>
                             </HorizontalStackLayout>
