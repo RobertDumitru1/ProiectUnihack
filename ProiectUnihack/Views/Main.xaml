@@ -4,10 +4,26 @@
              x:Class="ProiectUnihack.Views.Main"
              Shell.NavBarIsVisible="False"
              Title="Main">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Background="Black">
+        <Frame BackgroundColor="GreenYellow" 
+               BorderColor="YellowGreen" 
+               CornerRadius="0">
+            <HorizontalStackLayout Spacing="250">
+                
+            <ImageButton Source="shoppingcart.png" 
+                         HeightRequest="50" 
+                         WidthRequest="50" 
+                         HorizontalOptions="StartAndExpand"
+                         Background="Transparent"
+                         Clicked="ImageButton_Clicked"
+                         IsEnabled="True"/>
+            
+            <Image Source="coin.png"
+                   HorizontalOptions="EndAndExpand"
+                   HeightRequest="50"
+                   WidthRequest="50"/>
+            
+            </HorizontalStackLayout>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

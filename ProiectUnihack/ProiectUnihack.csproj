@@ -64,7 +64,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\coin.png" />
 	  <None Remove="Resources\Images\forest.png" />
+	  <None Remove="Resources\Images\shoppingcart.png" />
 	  <None Remove="Resources\Images\user.png" />
 	  <None Remove="Resources\Images\wallpaper.png" />
 	</ItemGroup>
@@ -78,6 +80,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Main.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shop.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignUpPage.xaml">
