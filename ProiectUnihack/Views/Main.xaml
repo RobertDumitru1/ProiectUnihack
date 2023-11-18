@@ -45,10 +45,18 @@
                BackgroundColor="CornflowerBlue"
                BorderColor="CornflowerBlue"
                WidthRequest="365">
-            <Image Source="waterbottle.png"
-                   HorizontalOptions="Start"
-                   HeightRequest="190"
-                   WidthRequest="100"/>
+            <HorizontalStackLayout>
+                <Image Source="waterbottle.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="190"
+                       WidthRequest="100"/>
+                <Label
+                    Text="Sticle din plastic"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    />
+            </HorizontalStackLayout>
 
         </Frame>
         
