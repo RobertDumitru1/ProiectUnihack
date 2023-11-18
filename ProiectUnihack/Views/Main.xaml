@@ -4,10 +4,13 @@
              x:Class="ProiectUnihack.Views.Main"
              Shell.NavBarIsVisible="False"
              Title="Main">
+    
     <VerticalStackLayout Background="Black">
+        
         <Frame BackgroundColor="GreenYellow" 
                BorderColor="YellowGreen" 
                CornerRadius="0">
+            
             <StackLayout Orientation="Horizontal" Spacing="0">
                 
             <ImageButton Source="shoppingcart.png" 
@@ -30,8 +33,9 @@
                         VerticalOptions="CenterAndExpand"
                     />
                 </Frame>
-                    <Image Source="coin.png"
-                      HorizontalOptions="End"
+                
+                <Image Source="coin.png"
+                       HorizontalOptions="End"
                        HeightRequest="50"
                        WidthRequest="50"/>
 
@@ -40,24 +44,35 @@
         </Frame>
         
         <Label Margin="0" Padding="0"> </Label>
+        
         <Frame HeightRequest="200" 
                CornerRadius="20"
                BackgroundColor="CornflowerBlue"
                BorderColor="CornflowerBlue"
                WidthRequest="365">
             <HorizontalStackLayout>
+                
                 <Image Source="waterbottle.png"
                        HorizontalOptions="Start"
                        HeightRequest="190"
-                       WidthRequest="100"/>
-                <Label
-                    Text="Sticle din plastic"
-                    FontSize="25"
-                    FontAttributes="Bold"
-                    HorizontalOptions="Center"
-                    />
+                       WidthRequest="100"
+                       Background="Transparent"/>
+                
+                <VerticalStackLayout>
+                    <Label Text="Sticle din Plastic"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+                    <Label Text="Orice recipient confectionat din plastic care se considera PET."
+                           FontSize="20"   
+                           FontAttributes="Italic"
+                           VerticalOptions="Center"/>
+                    
+                    <Button/>
+                    <Button/>
+                    
+                </VerticalStackLayout>
             </HorizontalStackLayout>
-
         </Frame>
         
         <Label Margin="0" Padding="0"></Label>
@@ -67,8 +82,33 @@
                BackgroundColor="Red"
                WidthRequest="365"
                BorderColor="Red">
-
-
+            <HorizontalStackLayout>
+                
+                <Image Source="glassbottle.png"
+                       HorizontalOptions="Start"
+                       HeightRequest="190"
+                       WidthRequest="100"
+                       Background="Transparent"/>
+                
+                <VerticalStackLayout>
+                    <Label Text="Sticle din Sticla"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Orice recipient confectionat din "/>
+                                <Span Text="Sticla." TextDecorations="Underline"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    
+                    <Button/>
+                    <Button/>
+                        
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
         </Frame>
         
         <Label Margin="0" Padding="0"></Label>
@@ -79,7 +119,22 @@
                BorderColor="DarkOrange"
                WidthRequest="365">
 
-
+            <HorizontalStackLayout>
+                    <Image Source="plasticbag.png"
+                           HorizontalOptions="Start"
+                           HeightRequest="190"
+                           WidthRequest="100"
+                           Background="Transparent"/>
+                
+                <VerticalStackLayout>
+                    <Label Text="Sacose din Plastic"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+                    <Label Text="Orice recipient flexibil și ușor, fabricat în general din polietilenă sau alte materiale plastice similare."
+                           />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
         </Frame>
         
     </VerticalStackLayout>
