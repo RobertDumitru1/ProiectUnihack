@@ -133,6 +133,9 @@
                            HorizontalOptions="Center"/>
                     <Label Text="Orice recipient flexibil și ușor, fabricat în general din polietilenă sau alte materiale plastice similare."
                            />
+                    <Button>
+                        
+                    </Button>
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </Frame>
