@@ -8,7 +8,7 @@
         <Frame BackgroundColor="GreenYellow" 
                BorderColor="YellowGreen" 
                CornerRadius="0">
-            <HorizontalStackLayout Spacing="250">
+            <StackLayout Orientation="Horizontal" Spacing="0">
                 
             <ImageButton Source="shoppingcart.png" 
                          HeightRequest="50" 
@@ -17,13 +17,26 @@
                          Background="Transparent"
                          Clicked="ImageButton_Clicked"
                          IsEnabled="True"/>
-            
-            <Image Source="coin.png"
-                   HorizontalOptions="EndAndExpand"
-                   HeightRequest="50"
-                   WidthRequest="50"/>
-            
-            </HorizontalStackLayout>
+                <Frame 
+                    BackgroundColor="Transparent"
+                    BorderColor="Black"
+                    HeightRequest="40"
+                    WidthRequest="101"
+                    Padding="0">
+                    <Label 
+                        Text="{Binding }" 
+                        TextColor="Black"
+                        FontSize="30"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                    />
+                </Frame>
+                    <Image Source="coin.png"
+                      HorizontalOptions="End"
+                       HeightRequest="50"
+                       WidthRequest="50"/>
+
+            </StackLayout>
         </Frame>
     </VerticalStackLayout>
 </ContentPage>

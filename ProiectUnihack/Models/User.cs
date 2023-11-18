@@ -10,5 +10,6 @@ namespace ProiectUnihack.Models
     {
         public string userName { get; set; }
         public string password { get; set; }
+        public int banuti {  get; set; }
     }
 }
