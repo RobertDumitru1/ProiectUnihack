@@ -2,8 +2,180 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProiectUnihack.Views.Shop"
+             Shell.BackgroundColor="YellowGreen"
              Title="Shop">
-    <VerticalStackLayout>
+
+    <ContentPage.ToolbarItems>
         
-    </VerticalStackLayout>
+        <ToolbarItem Text="100"/>
+        
+        <ToolbarItem Text="Add item"
+             IconImageSource="coin.png" />
+
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Image Source="wallpaper.png"
+               Aspect="AspectFill"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="170"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="170"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="170"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="170"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+
+            <Frame Grid.Row="1"
+                  WidthRequest="365"
+                  HeightRequest="150"
+                  BackgroundColor="Beige"
+                  BorderColor="YellowGreen"
+                  CornerRadius="15">
+                <HorizontalStackLayout>
+                    <Image Source="ticket.png" 
+                       Background="transparent"
+                       HeightRequest="70"
+                       WidthRequest="100"
+                       HorizontalOptions="Start">
+                    </Image>
+
+                    <Label Padding="19" Margin="0"/>
+
+                    <VerticalStackLayout>
+
+                        <Label Text="Bilete de tren"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           TextDecorations="Underline"
+                           FontSize="20">
+                        </Label>
+
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame Grid.Row="5"
+                   WidthRequest="365"
+                   HeightRequest="150"
+                   BackgroundColor="Beige"
+                   BorderColor="YellowGreen"
+                   CornerRadius="15">
+                <HorizontalStackLayout>
+                    <Image Source="coupon.png" 
+                           Background="transparent"
+                           HeightRequest="70"
+                           WidthRequest="100"
+                           HorizontalOptions="Start">
+                    </Image>
+
+                    <Label Padding="10" Margin="0"/>
+
+                    <VerticalStackLayout>
+
+                        <Label Text="Cupoane de reduceri!"
+                               HorizontalOptions="End"
+                               VerticalOptions="Start"
+                               TextDecorations="Underline"
+                               FontSize="20">
+                        </Label>
+
+                        <HorizontalStackLayout>
+                            <Label Text="5000"
+                                   FontSize="50"
+                                   TextColor="Green"
+                                   VerticalOptions="End"/>
+                            <Image Source="coin.png"
+                                   HeightRequest="75"
+                                   WidthRequest="75"/>
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+            </Frame>
+
+
+            <Frame Grid.Row="3"
+                   WidthRequest="365"
+                   HeightRequest="150"
+                   BackgroundColor="Beige"
+                   BorderColor="YellowGreen"
+                   CornerRadius="15">
+                <HorizontalStackLayout>
+                    <Image Source="bustick.png" 
+                          Background="transparent"
+                          HeightRequest="70"
+                          WidthRequest="100"
+                          HorizontalOptions="Start">
+                    </Image>
+
+                    <Label Padding="19" Margin="0"/>
+
+                    <VerticalStackLayout>
+
+                        <Label Text="Bilete de Autobuz!"
+                               HorizontalOptions="End"
+                               VerticalOptions="Start"
+                               TextDecorations="Underline"
+                               FontSize="20">
+                        </Label>
+
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+            </Frame>
+
+            <Frame Grid.Row="7"
+                   WidthRequest="365"
+                   HeightRequest="150"
+                   BackgroundColor="Beige"
+                   BorderColor="YellowGreen"
+                   CornerRadius="15">
+
+                <HorizontalStackLayout>
+                    <Image Source="money.png" 
+                           Background="transparent"
+                           HeightRequest="70"
+                           WidthRequest="70"
+                           HorizontalOptions="Start">
+                    </Image>
+
+                    <!--<Label Padding="19" Margin="0"/>-->
+
+                    <VerticalStackLayout>
+
+                        <Label Text="Tokens To Money!"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Start"
+                               TextDecorations="Underline"
+                               FontSize="20">
+                        </Label>
+                        
+                        <HorizontalStackLayout Spacing="0">
+                            <Label Text="50Ron = 1000"
+                                   FontSize="30"
+                                   VerticalOptions="End"
+                                   HorizontalOptions="Center"
+                                   Padding="0"
+                                   Margin="0"
+                                   TextColor="Green"/>
+                            <Image Source="coin.png"
+                                   HeightRequest="75"
+                                   WidthRequest="75"
+                                   HorizontalOptions="Center"/>
+                        </HorizontalStackLayout>
+
+
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+            </Frame>
+        </Grid>
+    </Grid>
+
 </ContentPage>

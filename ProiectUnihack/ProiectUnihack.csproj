@@ -64,9 +64,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bagplastic.png" />
+	  <None Remove="Resources\Images\bottleglass.png" />
+	  <None Remove="Resources\Images\bus-ticket.png" />
 	  <None Remove="Resources\Images\coin.png" />
+	  <None Remove="Resources\Images\coupon.png" />
 	  <None Remove="Resources\Images\forest.png" />
+	  <None Remove="Resources\Images\money.png" />
 	  <None Remove="Resources\Images\shoppingcart.png" />
+	  <None Remove="Resources\Images\ticket.png" />
 	  <None Remove="Resources\Images\user.png" />
 	  <None Remove="Resources\Images\wallpaper.png" />
 	  <None Remove="Resources\Images\WaterBottle.png" />

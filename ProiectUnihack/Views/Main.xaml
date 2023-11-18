@@ -2,86 +2,256 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProiectUnihack.Views.Main"
-             Shell.NavBarIsVisible="False"
-             Title="Main">
-    <VerticalStackLayout Background="Black">
-        <Frame BackgroundColor="GreenYellow" 
-               BorderColor="YellowGreen" 
-               CornerRadius="0">
-            <StackLayout Orientation="Horizontal" Spacing="0">
-                
-            <ImageButton Source="shoppingcart.png" 
-                         HeightRequest="50" 
-                         WidthRequest="50" 
-                         HorizontalOptions="StartAndExpand"
-                         Background="Transparent"
-                         Clicked="ImageButton_Clicked"
-                         IsEnabled="True"/>
-                <Frame 
-                    BackgroundColor="Transparent"
-                    BorderColor="Black"
-                    HeightRequest="40"
-                    WidthRequest="101"
-                    Padding="0">
-                    <Label  
-                        TextColor="Black"
-                        FontSize="30"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="CenterAndExpand"
-                    />
-                </Frame>
-                    <Image Source="coin.png"
-                      HorizontalOptions="End"
-                       HeightRequest="50"
-                       WidthRequest="50"/>
+             Shell.BackgroundColor="YellowGreen">
 
-            </StackLayout>
-            
-        </Frame>
+    
+    <ContentPage.ToolbarItems>
+        
+        <ToolbarItem Text="100"/>
+        <ToolbarItem Text="Add item"
+                 IconImageSource="coin.png" />
+        
+        <ToolbarItem
+          Order="Secondary"
+            Clicked="ShopButton_Clicked"
+          Text="Shop" 
+          IconImageSource="shoppingcart.png"/>
+        <ToolbarItem
+          Order="Secondary"
+          Text="Quests" />
+    </ContentPage.ToolbarItems>
+
+    
+
+
+    <VerticalStackLayout Background="Black">
         
         <Label Margin="0" Padding="0"> </Label>
-        <Frame HeightRequest="200" 
-               CornerRadius="20"
-               BackgroundColor="CornflowerBlue"
-               BorderColor="CornflowerBlue"
-               WidthRequest="365">
+        
+            <Frame HeightRequest="200" 
+                   CornerRadius="20"
+                   BorderColor="DarkGreen"
+                   WidthRequest="365">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="2,1">
+                    <GradientStop Color="YellowGreen"
+                          Offset="0.1" />
+                    <GradientStop Color="Green"
+                          Offset="3.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+                <HorizontalStackLayout HeightRequest="200" WidthRequest="365">
+                
+                    <Image Source="waterbottle.png"
+                           HorizontalOptions="Start"
+                           HeightRequest="190"
+                           WidthRequest="100"
+                           Background="Transparent"/>
+                
+                    <VerticalStackLayout>
+                        <Label Text="Sticle din Plastic"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"/>
+                        <Label Text="Orice recipient confectionat "
+                               FontSize="20"   
+                               FontAttributes="Italic"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               LineHeight="10"
+                               LineBreakMode="TailTruncation"/>
+
+                        <Label Text="din plastic care se considera PET."
+                               FontSize="20"   
+                               FontAttributes="Italic"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               LineHeight="10"
+                               LineBreakMode="TailTruncation"/>
+                        <Label Text="PET."
+                               FontSize="20"   
+                               FontAttributes="Italic"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               LineHeight="10"
+                               LineBreakMode="TailTruncation"/>
+                        <Label Padding="10" Margin="0"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Banuti:"
+                                   FontSize="20"   
+                                   FontAttributes="Italic"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   LineHeight="10"
+                                   LineBreakMode="TailTruncation"/>
+
+                            <Label Padding="0, 0, 60, 0"/>
+                            <Label Text = "1000"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   FontSize="20"/>
+
+                            <Image
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center"
+                                Source="coin.png"/>
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+        
+            <Label Margin="0" Padding="0"></Label>
+        
+            <Frame HeightRequest="200" 
+                   CornerRadius="20"
+                   WidthRequest="365"
+                   BorderColor="DarkGreen">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="YellowGreen"
+              Offset="0.1" />
+                    <GradientStop Color="Green"
+              Offset="3.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
             <HorizontalStackLayout>
-                <Image Source="waterbottle.png"
-                       HorizontalOptions="Start"
-                       HeightRequest="190"
-                       WidthRequest="100"/>
-                <Label
-                    Text="Sticle din plastic"
-                    FontSize="25"
-                    FontAttributes="Bold"
-                    HorizontalOptions="Center"
-                    />
+                
+                    <Image Source="bottleglass.png"
+                           HorizontalOptions="Start"
+                           HeightRequest="190"
+                           WidthRequest="100"
+                           Background="Transparent"/>
+                
+                    <VerticalStackLayout>
+                        <Label Text="Sticle din Sticla"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Orice recipient confec- "
+                               FontSize="20"   
+                               FontAttributes="Italic"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               LineHeight="10"
+                               LineBreakMode="TailTruncation"/>
+                   
+
+                        <Label FontSize="20">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="tionat din "
+                                          FontSize="20"/>
+                                    <Span Text="Sticla." TextDecorations="Underline"
+                                          FontSize="20"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Padding="10" Margin="0"/>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Banuti:"
+                                   FontSize="20"   
+                                   FontAttributes="Italic"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   LineHeight="10"
+                                   LineBreakMode="TailTruncation"/>
+
+                            <Label Padding="0, 0, 60, 0"/>
+                            <Label Text = "1000"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   FontSize="20"/>
+
+                            <Image
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center"
+                                Source="coin.png"/>
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+        
+            <Label Margin="0" Padding="0"></Label>
+
+        <Frame HeightRequest="250" 
+                   CornerRadius="20"
+                   Padding="0"
+                   BorderColor="DarkGreen"
+                   WidthRequest="365">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="2,0">
+                    <GradientStop Color="YellowGreen"
+              Offset="0.1" />
+                    <GradientStop Color="Green"
+              Offset="3.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <HorizontalStackLayout>
+                <Image Source="bagplastic.png"
+                               HorizontalOptions="Start"
+                               HeightRequest="190"
+                               WidthRequest="100"
+                               Background="Transparent"/>
+
+                <VerticalStackLayout>
+                    <Label Text="Sacose din Plastic"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"/>
+
+
+                    <Label Text="Orice recipient flexibil și"
+                               FontSize="20"
+                               FontAttributes="Italic"/>
+
+                    <Label Text="usor, fabricat în general"
+                               FontSize="20"   
+                               FontAttributes="Italic"/>
+                    <Label Text="din polietilenă sau alte"
+                               FontSize="20"   
+                               FontAttributes="Italic"/>
+
+                    <Label Text="materiale plastice"
+                               FontSize="20"   
+                               FontAttributes="Italic"/>
+                    <Label Text="similare."
+                               FontSize="20"   
+                               FontAttributes="Italic"/>
+                    <Label Padding="1"></Label>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Banuti:"
+                               FontSize="20"   
+                               FontAttributes="Italic"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               LineHeight="10"
+                               LineBreakMode="TailTruncation"/>
+
+                        <Label Padding="0, 0, 60, 0"/>
+                        <Label Text = "1000"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   FontSize="20"/>
+
+                        <Image
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center"
+                                Source="coin.png"/>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
             </HorizontalStackLayout>
-
         </Frame>
-        
-        <Label Margin="0" Padding="0"></Label>
-        
-        <Frame HeightRequest="200" 
-               CornerRadius="20"
-               BackgroundColor="Red"
-               WidthRequest="365"
-               BorderColor="Red">
-
-
-        </Frame>
-        
-        <Label Margin="0" Padding="0"></Label>
-        
-        <Frame HeightRequest="200" 
-               CornerRadius="20"
-               BackgroundColor="DarkOrange"
-               BorderColor="DarkOrange"
-               WidthRequest="365">
-
-
-        </Frame>
-        
     </VerticalStackLayout>
-    
 </ContentPage>
