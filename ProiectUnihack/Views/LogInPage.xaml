@@ -60,23 +60,6 @@
                                     VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
-
-                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                                <Label
-                                    Text="Centru"
-                                    TextColor="DarkGreen"
-                                    FontSize="17"
-                                    FontAttributes="Bold"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    />
-                                <CheckBox Color="DarkGreen"
-                                          Scale="0.8"
-                                          HorizontalOptions="Center"
-                                          VerticalOptions="Center"/>
-
-                            </HorizontalStackLayout>
-
                             <Button
                                 
                                 Text="Need an account?"

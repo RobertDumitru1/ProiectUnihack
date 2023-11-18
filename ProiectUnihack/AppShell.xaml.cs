@@ -10,7 +10,8 @@ namespace ProiectUnihack
 
             Routing.RegisterRoute(nameof(LogInPage), typeof(LogInPage));
             Routing.RegisterRoute(nameof(SignUpPage), typeof(SignUpPage));
-            //Routing.RegisterRoute(nameof(AddContactPage), typeof(AddContactPage));
+            Routing.RegisterRoute(nameof(Main), typeof(Main));
+
         }
     }
 }
