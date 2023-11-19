@@ -7,7 +7,7 @@
 
     <ContentPage.ToolbarItems>
         
-        <ToolbarItem Text="100"/>
+        <!--<ToolbarItem Text="0"/>-->
         
         <ToolbarItem Text="Add item"
              IconImageSource="coin.png" />
@@ -37,12 +37,13 @@
                   BorderColor="YellowGreen"
                   CornerRadius="15">
                 <HorizontalStackLayout>
-                    <Image Source="ticket.png" 
+                    <ImageButton Source="ticket.png" 
                        Background="transparent"
                        HeightRequest="70"
+                          Clicked="ImageButton_Clicked"
                        WidthRequest="100"
                        HorizontalOptions="Start">
-                    </Image>
+                    </ImageButton>
 
                     <Label Padding="19" Margin="0"/>
 
