@@ -49,11 +49,21 @@
                     <VerticalStackLayout>
 
                         <Label Text="Bilete de tren"
-                           HorizontalOptions="End"
+                           HorizontalOptions="Center"
                            VerticalOptions="Start"
                            TextDecorations="Underline"
                            FontSize="20">
                         </Label>
+                        <HorizontalStackLayout>
+                            <Label Text="1000"
+           FontSize="50"
+           TextColor="Green"
+           VerticalOptions="End"/>
+                            <Image Source="coin.png"
+           HeightRequest="75"
+           WidthRequest="75"/>
+                        </HorizontalStackLayout>
+
 
                     </VerticalStackLayout>
                 </HorizontalStackLayout>
@@ -124,6 +134,16 @@
                                TextDecorations="Underline"
                                FontSize="20">
                         </Label>
+                        <HorizontalStackLayout>
+                            <Label Text="100"
+           FontSize="50"
+           TextColor="Green"
+           VerticalOptions="End"/>
+                            <Image Source="coin.png"
+           HeightRequest="75"
+           WidthRequest="75"/>
+                        </HorizontalStackLayout>
+
 
                     </VerticalStackLayout>
                 </HorizontalStackLayout>
