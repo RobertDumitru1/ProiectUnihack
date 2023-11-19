@@ -95,7 +95,7 @@
                         </Label>
 
                         <HorizontalStackLayout>
-                            <Label Text="5000"
+                            <Label Text="500"
                                    FontSize="50"
                                    TextColor="Green"
                                    VerticalOptions="End"/>
