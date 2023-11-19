@@ -10,15 +10,12 @@
         <ToolbarItem Text="100"/>
         <ToolbarItem Text="Add item"
                  IconImageSource="coin.png" />
-        
+
         <ToolbarItem
           Order="Secondary"
             Clicked="ShopButton_Clicked"
           Text="Shop" 
           IconImageSource="shoppingcart.png"/>
-        <ToolbarItem
-          Order="Secondary"
-          Text="Quests" />
     </ContentPage.ToolbarItems>
 
     
